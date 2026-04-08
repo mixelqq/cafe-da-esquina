@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café da Esquina</title>
+
+  <style>
+    :root {
+      --marrom: #4E342E;
+      --bege: #F5E9DA;
+      --caramelo: #C68B59;
+      --creme: #FFF8F0;
+      --verde: #6D8B74;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--creme);
+      color: var(--marrom);
+    }
+
+    header {
+      background: var(--marrom);
+      color: white;
+      padding: 1rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav h1 {
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') center/cover no-repeat;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    .sobre, .contato {
+      background: var(--bege);
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .info {
+      text-align: center;
+    }
+
+    footer {
+      background: var(--marrom);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* Responsivo */
+    @media (min-width: 768px) {
+      .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero h2 {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .menu-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <h1>☕ Café do Povo</h1>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#menu">Cardápio</a></li>
+      <li><a href="#info">Info</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <h2>Seu café favorito no bairro</h2>
+    <p>Um espaço acolhedor para conversar, trabalhar e relaxar.</p>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <h2>Sobre nós</h2>
+    <p>
+      O Café da esquina nasceu com a ideia de criar um ambiente confortável e acolhedor,
+      onde cada cliente se sinta em casa. Aqui, servimos cafés especiais e comidas artesanais
+      feitas com carinho.
+    </p>
+  </section>
+
+  <section id="menu">
+    <h2>Nosso Cardápio</h2>
+
+    <div class="menu-grid">
+
+      <div class="card"><h3>Espresso</h3></div>
+      <div class="card"><h3>Cappuccino</h3></div>
+      <div class="card"><h3>Café com leite</h3></div>
+      <div class="card"><h3>Mocha</h3></div>
+      <div class="card"><h3>Chocolate quente</h3></div>
+
+      <div class="card"><h3>Croissant</h3></div>
+      <div class="card"><h3>Pão de queijo</h3></div>
+      <div class="card"><h3>Torta de limão</h3></div>
+      <div class="card"><h3>Bolo de cenoura</h3></div>
+      <div class="card"><h3>Sanduíche natural</h3></div>
+
+    </div>
+  </section>
+
+  <section id="info" class="info">
+    <h2>Horário & Localização</h2>
+    <p>📍 Rua das Flores, 123 - Bairro Centro</p>
+    <p>🕒 Seg a Sáb: 8h às 19h</p>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2>Contato</h2>
+    <p>📞 (51) 99999-9999</p>
+    <p>📧 contato@cafedaesquina.com</p>
+    <p>📱 Instagram: @cafedaesquina</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Café da Esquina - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
